@@ -15,13 +15,7 @@ These are - in a nutshell - the main steps I took to put this small experiment t
 + **Overall checks**
 
 ![Source Image Sequence](box_general.gif)
-
-## Contents :
-<img align="right" width="50%" src="haar.png"> 
-The limitations behind the Mean Shift algorithm are pretty clear and self-evident after running the algorithm and focusing on several critical frames where the algorithm terribly fails at tracking.
-
-&nbsp;
-## Summary :
+## Summary : 
 Below a summary of the main functions used with the Mean Shift algorithm:
 
 | Function            |Action                                                                        |
@@ -34,8 +28,8 @@ Below a summary of the main functions used with the Mean Shift algorithm:
 |**cv2.meanShift()**    | Initialize Mean Shift algorithm.|
 
 ## Issues:
-Although several issues can be spotted right away once we run the program, mainly related with the tracking phase and the fact that the bounding rectangle is not adapting to the object size nor the .
-
+The limitations behind the Mean Shift algorithm are pretty clear and self-evident after running the algorithm and focusing on several critical frames where the algorithm terribly fails at tracking. Although several issues can be spotted right away once we run the program, mainly related with the tracking phase and the fact that the bounding rectangle is not adapting to the object size nor the .
+![Source Image Sequence](box_popup.gif)
 ## Summary:
 
 ```python
