@@ -4,6 +4,8 @@
 In this short coding exercise I have used a basic tracking algorithm of OpenCV called Mean Shift that is mainly used for object tracking, despite having certain limitations when it comes to the bounding rectangle and the total lack of responsiveness when it comes to 'following' the tracked object when the lighting conditions change. 
 ![Source Image Sequence](box_.jpg)
 
+The code can be run both from a source video file or in real time!
+
 These are - in a nutshell - the main steps I took to put this small experiment together:
 
 + **Define Region of Interest (ROI) (Lenovo tablet box)**
@@ -32,7 +34,14 @@ Below a summary of the main functions used with the Mean Shift algorithm:
 The limitations behind the Mean Shift algorithm are pretty clear and self-evident after running the algorithm and focusing on several critical frames where the algorithm terribly fails at tracking. Although several issues can be spotted right away once we run the program, mainly related with the tracking phase and the fact that the bounding rectangle is not adapting to the object size nor the .
 ![Source Image Sequence](box_popup.gif)
 ## Summary:
-
+```python
+# Run from a video file
+cv2.VideoCapture('lenovo_box.avi')
+```
+```python
+# Run from real time webcam
+cv2.VideoCapture(0)
+```
 ```python
 # Define first frame
 cv2.imread("box.jpg", cv2.IMREAD_COLOR)
