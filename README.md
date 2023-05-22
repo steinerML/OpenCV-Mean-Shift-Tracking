@@ -2,6 +2,7 @@
 ### Object Tracking 
 
 In this short coding exercise I have used a basic tracking algorithm of OpenCV called Mean Shift that is mainly used for object tracking, despite having certain limitations when it comes to the bounding rectangle and the total lack of responsiveness when it comes to 'following' the tracked object when the lighting conditions change. 
+![Source Image Sequence](box.jpg)
 
 These are - in a nutshell - the main steps I took to put this small experiment together:
 
